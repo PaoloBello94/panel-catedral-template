@@ -12,7 +12,6 @@ html {
 img {
     width: 40px;
     height: 40px;
-    line-height: 100px;
     text-align: center;
     border-radius: 5px;
     position: relative;
@@ -31,6 +30,7 @@ body {
     color: aliceblue;
     margin-left: 10px;
     margin-bottom: -10px;
+    max-width: max-content;
 }
 
 .grid-container > * {
@@ -43,7 +43,7 @@ body {
 .header {
     display: flex;
     grid-area: header;
-    background-color: rgba(31, 31, 240, 0.89);
+    background:linear-gradient(270deg, #0f3b84, #6282F9, #0f3b84);
     gap: 20px;
     justify-content: space-between;
     align-items: center;
@@ -76,6 +76,9 @@ body {
 #btnSalir {
     color: aliceblue;
     cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: 10px;
 }
 @media (max-width: 480px) {
     .grid-container {
